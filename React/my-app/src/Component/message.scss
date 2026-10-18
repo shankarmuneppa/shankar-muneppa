@@ -1,0 +1,17 @@
+.title {
+  background-color: aqua;
+  position: relative;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    background-color: black;
+    color: #fff;
+  }
+
+  img {
+    position: absolute;
+    border-radius: 30px;
+    width: 100%;
+  }
+}
