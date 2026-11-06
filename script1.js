@@ -1,0 +1,1 @@
+Document.Write("Hello World");

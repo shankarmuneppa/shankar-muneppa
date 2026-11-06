@@ -1,0 +1,18 @@
+div {
+    background-color: black;
+    overflow: hidden;
+}
+a {
+    color: white;
+    text-decoration: none;
+    background: red;
+    padding: 5px;
+    float: left;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.help {
+    float: right;
+    margin-right: 0;
+    background: green;
+}
