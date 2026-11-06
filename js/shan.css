@@ -1,18 +1,117 @@
-div {
-    background-color: black;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-a {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle, #5c1600, #160000);
     color: white;
-    text-decoration: none;
-    background: red;
-    padding: 5px;
-    float: left;
-    margin-right: 5px;
-    font-size: 14px;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
 }
-.help {
-    float: right;
-    margin-right: 0;
-    background: green;
+/*Main Section*/
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+h1 {
+    color: gold;
+    font-size: 35px, 7vw, 65px;
+    text-shadow: 0 0 10px orange, 0 0 30px red;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px gold;
+    }
+    to {
+        text-shadow: 0 0 30px orange, 0 0 50px red;
+    }
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+    color: #ffe7a3;
+}
+
+/*Diya */
+
+.diya {
+    position: relative;
+    width: 120px;
+    height: 65px;
+    background: linear-gradient(Orange, #a52a00);
+    border-radius: 10px 10px 60px 60px;
+    margin: 50px auto 20px;
+    box-shadow: 0 0 30px orange;
+}
+
+.flame {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background: linear-gradient(yellow, orange, red);
+    border-radius: 50% 50% 50% 50%;
+    top: -48px;
+    left: 45px;
+    transform-origin: bottom;
+    animation: flicker 0.5s infinite alternate;
+}
+@keyframes flicker {
+    from {
+        transform: rotate(-8deg) scale(1);
+    }
+    to {
+        transform: rotate(8deg) scale(1.1);
+    }
+}
+
+/* Button */
+button {
+    padding: 15px 30px;
+    background: gold;
+    color: #680b00;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: orange;
+    transform: scale(1.1);
+}
+
+/* Fireworks */
+.firework {
+    position: fixed;
+    font-size: 30px;
+    pointer-events: none;
+    animation: explode 1.5s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    color: gold;
+    font-size: 15px;
 }
