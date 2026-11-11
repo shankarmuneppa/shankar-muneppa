@@ -3,30 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diwali</title>
+  <title>My Personal Portfolio</title>
   <link rel="stylesheet" href="./shan.css">
 </head>
 <body>
-  <div class="container">
-    <h1>✨ Happy Diwali ✨</h1>
-    <p>May your life shine like a beautiful Diya!</p>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">MyPortfolio</h2>
 
-    <div class="diya">
-      <div class="flame"></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-content">
+      <h3>Hello, I,m</h3>
+      <h1>Shankar</h1>
+      <h2>Frontend Developer</h2>
+
+      <p>
+        I create beautiful and responsive websites
+        using HTML, CSS, Javascript and React.
+      </p>
+      <a href="#contact" class="btn">Hire Me</a>
     </div>
 
-    <h2>🪔 Festival of Lights 🪔<</h2>
-    <p>May this diwali bring happiness,
-      prosperity, peace and success.
-    </p>
-    <button onclick="celebrate()">
-      Celebrate Diwali 🎆
-    </button>
+    <div class="home-image">
+      <div class="profile-circle">
+        <span>👨‍💻</span>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p>❤️ Wishing You and Your Family a Happy Diwali ❤️</p>
-    </footer>
-  </div>
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      i am a passionate Frontend Developer interested
+      in creating modern, responsive and user-friendly websites.
+
+      i enjoy learning new technologies and building creative 
+      web applications.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>HTML5</h3>
+        <div class="progress">
+          <span style="width: 90%"></span>
+
+        </div>
+
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS3</h3>
+        <div class="progress">
+          <span style="width: 85%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Javascript</h3>
+        <div class="progress">
+          <span style="width: 75%"></span>
+        </div>
+      </div>
+     
+      <div class="skill-card">
+        <h3>React JS</h3>
+        <div class="progress">
+          <span style="width: 70%"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-title">My Projects</h2>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          personal portfolio website using HTML, CSS and Javascript.
+        </p>
+        <a href="#home">View Projects</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Shopping Website</h3>
+        <p>
+          Responsive shopping website
+          with modern UI design.
+        </p>
+        <a href="#home">View Projects</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Read Application</h3>
+        <p>
+          Interactive Application built using React JS.
+        </p>
+        <a href="#home">View Project</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+   
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="btn">
+        Send Message
+      </button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Shankar | All Rights Reserved</p>
+  </footer>
+
+  <script src="./script.js"></script>
 
 </body>
 </html>
